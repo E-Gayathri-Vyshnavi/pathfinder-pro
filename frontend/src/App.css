@@ -1,0 +1,34 @@
+:root {
+  --primary: #38bdf8;
+  --bg-dark: #0f172a;
+  --card-bg: #1e293b;
+  --text-main: #f8fafc;
+}
+
+body { margin: 0; background-color: var(--bg-dark); font-family: 'Inter', sans-serif; }
+
+.App { min-height: 100vh; color: var(--text-main); padding: 40px 20px; display: flex; justify-content: center; }
+
+.glass-panel { width: 100%; max-width: 850px; background: rgba(255, 255, 255, 0.02); padding: 40px; border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); text-align: center; }
+
+h1 { font-size: 2.8rem; margin: 0; background: linear-gradient(to right, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+.subtitle { color: #94a3b8; margin-bottom: 30px; }
+
+.input-row { display: flex; gap: 12px; margin-bottom: 40px; }
+
+input { flex: 1; padding: 14px; border-radius: 12px; border: 1px solid #334155; background: #0f172a; color: white; font-size: 1rem; outline: none; }
+
+button { background: var(--primary); color: #0f172a; border: none; padding: 0 24px; border-radius: 12px; font-weight: 700; cursor: pointer; transition: 0.2s; }
+button:hover { background: #7dd3fc; transform: translateY(-2px); }
+
+.roadmap { display: flex; flex-direction: column; gap: 20px; }
+
+.step-card { background: var(--card-bg); padding: 25px; border-radius: 16px; text-align: left; position: relative; border-left: 5px solid var(--primary); transition: 0.3s; }
+.step-card:hover { transform: translateX(10px); background: #243147; }
+
+.step-number { position: absolute; right: 25px; top: 15px; font-size: 3rem; opacity: 0.05; font-weight: 900; }
+
+.meta { display: flex; gap: 25px; margin-top: 15px; font-size: 0.9rem; color: #94a3b8; font-weight: bold; }
+
+.placeholder-text { color: #475569; margin-top: 50px; font-style: italic; }
